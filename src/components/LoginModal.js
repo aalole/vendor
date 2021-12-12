@@ -13,14 +13,7 @@ export default function LoginModal({ setOpen, open }) {
     email: "",
     password: "",
   });
-  const [formError, setFormError] = useState(null);
 
-  const handleFormError = () => {
-    const { email, password } = formData;
-    if (!email || !password) {
-      setFormError("email or password is incorrect!");
-    }
-  };
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -38,7 +31,6 @@ export default function LoginModal({ setOpen, open }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
-    handleFormError();
     dispatch(login(formData.email, formData.password));
   };
 
@@ -99,9 +91,10 @@ export default function LoginModal({ setOpen, open }) {
                           className="mt-8 space-y-6"
                           onSubmit={handleSubmit}
                           name="loginForm"
+                          remember="false"
                         >
                           {loading && <h3 className='text-green-500 text-center'>Loading...</h3>}
-                          {error && <div className="text-red-600 text-center">{error}</div>}
+                          {error && <div className="text-red-600 text-center">Invalid email or password </div>}
                           {loginSuccess && <div className="text-green-500 text-center">It's nice to see you again {user.data.firstname}</div>}
                           <input
                             type="hidden"
@@ -122,7 +115,7 @@ export default function LoginModal({ setOpen, open }) {
                                 type="email"
                                 autoComplete="email"
                                 required
-                                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm mb-2"
                                 placeholder="Email address"
                                 onChange={handleChange}
                                 value={formData.email}
@@ -144,9 +137,6 @@ export default function LoginModal({ setOpen, open }) {
                                 value={formData.password}
                               />
                             </div>
-                            {formError && (
-                              <p className="text-red">{formError}</p>
-                            )}
                           </div>
                           <div>
                             <button

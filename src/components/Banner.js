@@ -139,7 +139,7 @@ export default function Banner() {
                 <div className="rounded-full">
                   <a
                     href="/"
-                    className="w-full px-10 py-23 border font-medium rounded-full bg-none hover:bg-green-700 md:py-4 md:text-sm md:px-10 shop-now-btn"
+                    className="w-full px-10 py-2 border font-medium rounded-full bg-none hover:bg-green-700 hover:text-white md:py-4 md:text-sm md:px-10 shop-now-btn"
                   >
                     Shop Now
                   </a>

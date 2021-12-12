@@ -20,7 +20,7 @@ export function FooterItem1() {
       </div>
 
       <div className="text-sm pl-5">
-        <p className="text-grey-p">
+        <p className="text-grey-p leading-7">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores
           consequatur iste tenetur vero quos eum?
         </p>
@@ -55,22 +55,22 @@ export function FooterItem2() {
       </div>
       <div className="text-sm pl-5">
         <ul className="list-item">
-          <li>
+          <li className='pb-2'>
             <a href="/">About Us</a>
           </li>
-          <li>
+          <li className='pb-2'>
             <a href="/">Our Products</a>
           </li>
-          <li>
+          <li className='pb-2'>
             <a href="/">Our Service</a>
           </li>
-          <li>
+          <li className='pb-2'>
             <a href="/">Shop</a>
           </li>
-          <li>
+          <li className='pb-2'>
             <a href="/">New Blog</a>
           </li>
-          <li>
+          <li className='pb-2'>
             <a href="/">Contact Us</a>
           </li>
         </ul>
@@ -86,25 +86,25 @@ export function FooterItem3() {
       </div>
       <div className="text-sm pl-5">
         <ul className="list-item">
-          <li>
+          <li className='pb-2'>
             <a href="/">online Shoppinf</a>
           </li>
-          <li>
+          <li className='pb-2'>
             <a href="/">Free Home Delivery</a>
           </li>
-          <li>
+          <li className='pb-2'>
             <a href="/">Return Money</a>
           </li>
-          <li>
+          <li className='pb-2'>
             <a href="/">Shop</a>
           </li>
-          <li>
+          <li className='pb-2'>
             <a href="/">Delivery on Place</a>
           </li>
-          <li>
+          <li className='pb-2'>
             <a href="/">Wishlist</a>
           </li>
-          <li>
+          <li className='pb-2'>
             <a href="/">Discount</a>
           </li>
         </ul>
@@ -117,10 +117,10 @@ export function FooterItem4() {
   return (
     <div className="lg:w-1/4 footer-col-wrap">
       <div className="logo-wrap text-lg mb-10">
-        <span className="">NEWS LETTER</span>
+        <span className="pl-5">NEWS LETTER</span>
       </div>
       <div className="text-sm pl-5">
-        <p className="text-grey-p mb-3">Subscribe To Our News Letter</p>
+        <p className="text-grey mb-3">Subscribe To Our News Letter</p>
         <form name="newsletter" className="mt-2">
           <input
             type="text"
