@@ -68,9 +68,9 @@ const Teaser = () => {
             return (
               <div key={id} className="text-center">
                 <img src={imgId} alt="meal" className="rounded-full block" />
-                <div className='mt-6'>
+                <div className='mt-6 pb-6'>
                   <h5 className="text-sm menu-name pb-3">{name}</h5>
-                  <p className="menu-price text-medium">{price}</p>
+                  <p className="menu-price text-bold">{price}</p>
                 </div>
               </div>
             );

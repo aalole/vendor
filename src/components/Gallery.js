@@ -2,9 +2,9 @@ import React from "react";
 
 const Gallery = () => {
   return (
-    <div>
+    <div className='gallery'>
       <div className="gallery-header text-center pt-5 pb-12">
-        <h1 className="text-5xl mb-4 pt-3 pb-3 font-bold text-black text-center contact-title">
+        <h1 className="text-5xl mt-10 mb-3 pt-4 pb-2 font-bold text-black text-center contact-title">
           FOOD GALLERY
         </h1>
         <p className="text-gray-500 font-normal text-sm">

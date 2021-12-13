@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -100,7 +99,7 @@ html {
   border-top: 8px solid #13b675;
   border-radius: 10px;
   margin-top: 10px;
-  height: 400px;
+  height: 450px;
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 .menu-price {
@@ -110,6 +109,9 @@ html {
   color: #48868b;
 }
 /* Gallery css */
+.gallery {
+  padding-bottom: 30px;
+}
 .grid-container {
   width: 90%;
   height: 700px;
@@ -244,6 +246,9 @@ html {
 .footer {
   margin-top: 70px !important;
 }
+.form-container{
+  z-index: -1000;
+}
 @media screen and (max-width: 600px) {
   .food-card {
     max-width: 90%;
@@ -257,12 +262,12 @@ html {
   }
   .gallery-header h1,
   .services-container h1,
-  .contact-title {
+  .contact-title,
+  .teaser-heading h1,
+  .services-header h1 {
     font-size: 25px;
   }
-  .all-services {
-    flex-direction: column;
-  }
+  .all-services, 
   .input-wrapper,
   .contact-wrap {
     flex-direction: column;
@@ -291,6 +296,5 @@ html {
     position: absolute;
     bottom: 220px !important;
     left: 60%;
-    z-index: 100;
   }
 }

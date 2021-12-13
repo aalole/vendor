@@ -1,14 +1,10 @@
 import React from "react";
 
 const ContactForm = () => {
-
   return (
-    <form
-      name="contactForm"
-      className="pr-4 contact-form"
-    >
+    <form name="contactForm" className="pr-4 contact-form">
       <div className="input-wrapper flex justify-between align-center mb-3 ">
-        <div className="flex flex-col pr-4 mb-2">
+        <div className="flex flex-col pr-4 mb-3">
           <label htmlFor="fullname" className="pb-4 text-sm ">
             Full Name <span className="text-green-400">*</span>
           </label>
@@ -20,18 +16,14 @@ const ContactForm = () => {
             className="py-2"
           />
         </div>
-        <div className="flex flex-col mb-2">
+        <div className="flex flex-col mb-3">
           <label htmlFor="email" className="pb-4 text-sm ">
             Email Address <span className="text-green-400">*</span>
           </label>
-          <input
-            type="email"
-            placeholder="Email"
-            required
-          />
+          <input type="email" placeholder="Email" required className="py-2" />
         </div>
       </div>
-      <div className="flex flex-col">
+      <div className="flex flex-col mb-3">
         <label htmlFor="message" className="pb-4 text-sm ">
           Message <span className="text-green-400">*</span>
         </label>
@@ -39,6 +31,7 @@ const ContactForm = () => {
           rows="5"
           placeholder="Message"
           cols="10"
+          className="py-2"
         ></textarea>
       </div>
       <button

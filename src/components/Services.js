@@ -42,7 +42,7 @@ const Services = () => {
           {servicesData.map((service) => {
             const { id, iconName, title, details } = service;
             return (
-              <div className="service text-center pl-5 pr-5" key={id}>
+              <div className="service text-center pl-5 pr-5 py-4" key={id}>
                 <i className={`${iconName} text-3xl`}></i>
                 <h3 className='font-bold text-lg py-3'>{title}</h3>
                 <p>{details}</p>
